@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:paddingStart="6dip"
+    android:paddingEnd="10dip"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:drawableEnd="@drawable/delete"
+    android:textColor="@android:color/black"
+    android:text="Items" />

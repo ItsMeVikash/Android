@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "96848609567",
+    "firebase_url": "https://ganpati-mart.firebaseio.com",
+    "project_id": "ganpati-mart",
+    "storage_bucket": "ganpati-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96848609567:android:a04235afb919a4d1",
+        "android_client_info": {
+          "package_name": "vikash.ganpatimart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96848609567-emc3akjfe7tcrv0k6c4kqq5kgvt16ak3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vikash.ganpatimart",
+            "certificate_hash": "c5732aad432206e62ce117b42d4079c8ab9f8b9c"
+          }
+        },
+        {
+          "client_id": "96848609567-2aghi80k15mp5d4iumknh3ht6ph09r30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUB2aFm4s7XZfIAUMfiftldx0SLHfjsxo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96848609567-2aghi80k15mp5d4iumknh3ht6ph09r30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

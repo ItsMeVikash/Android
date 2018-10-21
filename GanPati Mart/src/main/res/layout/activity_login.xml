@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/coordinatorLayout"
+    android:baselineAligned="false"
+    android:background="@android:color/white"
+    tools:context="vikash.ganpatimart.Login">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/login"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Member LOGIN"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/splash"
+                android:background="@android:color/white"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/customer_login"
+                android:text="Customer Login"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:background="@null"
+                    android:text="Customer Please Click Above"
+                    android:clickable="false"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/email"
+                android:background="@drawable/rounded_corner"
+                android:hint="Enter Your Email"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:scrollHorizontally="true"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+                <TextView
+                    android:text="This Is For Our Company People"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                android:id="@+id/password"
+                android:background="@drawable/rounded_corner"
+                android:inputType="textPassword"
+                android:hint="Password Here"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+             </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>
