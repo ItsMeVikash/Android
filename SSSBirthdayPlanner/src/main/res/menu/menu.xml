@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kumar.vikash.sssbirthdayplanner.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:title="Triple Dot"
+        android:orderInCategory="100"
+        android:icon="@drawable/triple"
+        android:visible="true"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/cart"
+                android:icon="@drawable/cart"
+                android:title="Cart"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/about"
+                android:title="About Us"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/how_to_use"
+                android:icon="@drawable/how"
+                android:title="How To Use"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/contact"
+                android:title="Contact Us"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/other_app"
+                android:icon="@drawable/other"
+                android:title="Other App"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

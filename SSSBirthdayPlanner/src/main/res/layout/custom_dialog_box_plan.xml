@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+       <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="20dp"
+               android:text="OFFERS"
+               android:textStyle="bold"
+               android:textColor="@color/colorPrimary"/>
+           <View
+               android:background="@color/colorPrimary"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:padding="10dp"
+                android:checkedButton="@id/no_offer"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup_plan">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MINI"
+                    android:id="@+id/mini"
+                    android:checked="false" />
+                <TextView
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:text="1L Cold drink + Cap + Candle + Knife "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMALL"
+                    android:id="@+id/small"
+                     android:checked="false"
+                    android:layout_weight="0.13" />
+                <TextView
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:text="MINI( Replaced With 2.5L Cold drink)+ 10 glass + Ribbon(1 Packet)+ Balloon(50 Pc)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LARGE"
+                    android:id="@+id/large"
+                    android:checked="false"
+                    android:layout_weight="0.13" />
+                <TextView
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:text="SMALL(Replaced With 2*2.5L Cold drink + 20 Glasses + 100 Balloons)+ 1 Big Balloon + 2 Pkt Glitter + 1 Pc Bhujia + 20 pc Plate "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                 <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BUMPER"
+                    android:id="@+id/bumper"
+                    android:checked="false"
+                    android:layout_weight="0.13" />
+                <TextView
+                    android:textSize="10dp"
+                    android:padding="10dp"
+                    android:text="LARGE(Replaced With 3*2.5L Cold drink + 2pkt Ribbon + 30 Glasses + 125 Balloons + 3 Big Balloon+ 6Pkt Glitter + 2Pc Bhujia + 1Pkt Sweets)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emoji"
+                    android:id="@+id/no_offer"
+                    android:checked="false"
+                    android:layout_weight="0.13" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/proceed"
+        android:text="proceed"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

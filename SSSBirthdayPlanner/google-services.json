@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "746177659150",
+    "firebase_url": "https://sssbirthdayplanner.firebaseio.com",
+    "project_id": "sssbirthdayplanner",
+    "storage_bucket": "sssbirthdayplanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746177659150:android:44a58d91af485c27",
+        "android_client_info": {
+          "package_name": "kumar.vikash.sssbirthdayplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746177659150-t2mvict3pva1j6gs3i0fp3mjbvaaqbqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kumar.vikash.sssbirthdayplanner",
+            "certificate_hash": "c5732aad432206e62ce117b42d4079c8ab9f8b9c"
+          }
+        },
+        {
+          "client_id": "746177659150-hhk0nsu3r3aubcb7t331fa9q8itldft8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "746177659150-hhk0nsu3r3aubcb7t331fa9q8itldft8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmn5apppEkFMXrvSVtFix4no0DwCI9MHw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746177659150-hhk0nsu3r3aubcb7t331fa9q8itldft8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

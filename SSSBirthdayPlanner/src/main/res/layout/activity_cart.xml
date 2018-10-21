@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kumar.vikash.sssbirthdayplanner.Cart">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout2"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ListView
+            android:id="@+id/listview"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="1px"
+            android:layout_marginBottom="5dp" >
+        </ListView>
+        <Button
+            android:id="@+id/checkout"
+            android:text="Checkout"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ToolbarColoredBackArrow"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Cart"
+            android:layout_gravity="left"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+    </android.support.v7.widget.Toolbar>
+        <TextView
+            android:id="@+id/total"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/empty_list_view"
+            android:layout_centerHorizontal="true"
+            android:text="Your Cart Is Empty !!"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

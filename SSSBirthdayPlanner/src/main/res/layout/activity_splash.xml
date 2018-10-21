@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kumar.vikash.sssbirthdayplanner.Splash">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+    <kumar.vikash.sssbirthdayplanner.SquareImageView
+        android:id="@+id/image"
+        android:src="@drawable/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:text="Developer - Vikash"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/font"
+        android:padding="10dp"
+        android:gravity="end"
+        android:textSize="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content">
+     <TextView
+        android:id="@+id/splash_textview"
+        android:text="BIRTHDAY PLANNER"
+        android:padding="10dp"
+        android:fontFamily="@font/font"
+        android:textSize="28sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/splash_textview1"
+        android:padding="10dp"
+        android:fontFamily="@font/font"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="You Celebrate We Will Manage !!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</RelativeLayout>
