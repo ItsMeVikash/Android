@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430073658981",
+    "firebase_url": "https://vit-proctor.firebaseio.com",
+    "project_id": "vit-proctor",
+    "storage_bucket": "vit-proctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430073658981:android:79ce591a1bf667cd",
+        "android_client_info": {
+          "package_name": "vitproctor.kumar.vikash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430073658981-5mm1t87dog73vbi8fpu10kt5bqugcf8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vitproctor.kumar.vikash",
+            "certificate_hash": "c5732aad432206e62ce117b42d4079c8ab9f8b9c"
+          }
+        },
+        {
+          "client_id": "430073658981-g59mo2jps16v896bdvnsict94ed4cvtl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiRa3Z43dwfsQIToM2DuxLZOSlgJIBj7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430073658981-g59mo2jps16v896bdvnsict94ed4cvtl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

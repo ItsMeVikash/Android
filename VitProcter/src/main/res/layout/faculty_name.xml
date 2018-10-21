@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_height="150dp"
+    android:layout_width="fill_parent"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="40dp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:drawableTop="@drawable/fpic"
+    android:background="@drawable/grid_items_border"
+    android:text="Teacher"
+    android:gravity="center" />

@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <item
+        android:id="@+id/notification"
+        android:enabled="true"
+        android:title="Notification"
+        android:orderInCategory="100"
+        android:icon="@drawable/notification"
+        android:visible="true"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:title="Triple Dot"
+        android:orderInCategory="100"
+        android:icon="@drawable/triple"
+        android:visible="true"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rate"
+                android:title="Rate"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/logout"
+                android:title="Exit"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>
