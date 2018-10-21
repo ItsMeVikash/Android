@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "991287830677",
+    "firebase_url": "https://nightlife-e2b5c.firebaseio.com",
+    "project_id": "nightlife-e2b5c",
+    "storage_bucket": "nightlife-e2b5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991287830677:android:ff54d35691bfe113",
+        "android_client_info": {
+          "package_name": "nightlife.kumar.vikash.nightlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991287830677-k39fsqvlfdghovr2h3v1p90rjg3t82pt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nightlife.kumar.vikash.nightlife",
+            "certificate_hash": "c5732aad432206e62ce117b42d4079c8ab9f8b9c"
+          }
+        },
+        {
+          "client_id": "991287830677-b86icjqanb27fptd2uq8ogcd9dipdv3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA30xYINrWjXFE4gVQWhsfzPnsgQxLP6Co"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991287830677-b86icjqanb27fptd2uq8ogcd9dipdv3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

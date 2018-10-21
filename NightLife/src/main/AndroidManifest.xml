@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="nightlife.kumar.vikash.nightlife">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="NightLife"
+            android:theme="@style/AppTheme"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Bangalore.Bangalore" />
+        <activity android:name=".GoogleMap.GoogleMaps" />
+        <activity android:name=".web_browser" />
+        <activity android:name=".google_floating_button" />
+        <activity android:name=".chandigarh.chandigarh" android:label="@string/title_activity_chandigarh" android:theme="@style/AppTheme" />
+        <activity android:name=".chennai.chennai" android:label="@string/title_activity_chennai" android:theme="@style/AppTheme" />
+        <activity android:name=".delhi.delhi" />
+        <activity android:name=".goa.goa" />
+        <activity android:name=".hyderabad.hyderabad" />
+        <activity android:name=".jaipur.jaipur" />
+        <activity android:name=".kolkata.kolkata" />
+        <activity android:name=".mumbai.mumbai" />
+        <activity android:name=".pune.pune" />
+        <activity android:name=".Intro_Slider.WelcomeActivity"/>
+        <activity android:name=".Splash_Screen.Splash" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
