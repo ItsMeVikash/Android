@@ -1,0 +1,81 @@
+----------------------------saving video/image to internal storage----------------------------------
+====================================================================================================
+
+ File destFile = new File(getCacheDir(), "video/image");
+ if (!destFile.exists())
+	`destFile.mkdir();
+
+public static boolean downloadFile(Context context, String url, File destFile) {
+    
+    BufferedInputStream bis = null;
+    FileOutputStream fos = null;
+    InputStream is = null;
+    
+    try {
+      URL myUrl = new URL(url);
+      URLConnection connection = myUrl.openConnection();
+      
+      	is = connection.getInputStream();
+      	bis = new BufferedInputStream(is);
+      	fos = new FileOutputStream(destFile); 
+	int current = 0;
+   	while ((current = bis.read()) != -1) {
+        	fos.write(current);
+         }
+        fos.close();
+    }catch(Exception e) {
+      //Log.e(TAG, "Error while downloading and saving file !", e);
+    }
+    finally {
+      try {
+        if ( fos != null ) fos.close();
+      } catch( IOException e ) {}
+      try {
+        if ( bis != null ) bis.close();
+      } catch( IOException e ) {}
+      try {
+        if ( is != null ) is.close();
+      } catch( IOException e ) {}
+    }
+
+
+=======================================================================================================
+-----------------------------------show images/video in galary-----------------------------------------
+=======================================================================================================
+MediaScannerConnection.scanFile(this, new String[] { file.getAbsolutePath()},null,
+ new MediaScannerConnection.OnScanCompletedListener() {
+    @Override
+    public void onScanCompleted(String path, Uri uri) {
+
+    }
+}); 
+
+
+=======================================================================================================
+-----------------------------------print images to bluetooth printer-----------------------------------
+=======================================================================================================
+
+https://stackoverflow.com/questions/42901756/printing-an-image-on-a-bluetooth-printer-in-android
+var printables = ArrayList<Printable>()
+var printable = Printable.PrintableBuilder()  
+    .setImage(image) 
+    .setNewLinesAfter(1) // To provide n lines after sentence
+    .build()
+printables.add(printable)
+BluetoothPrinter.printer().print(printables)
+
+------------------------------------------------------------------------------------------------------------
+https://www.androidcode.ninja/android-bluetooth-tutorial/
+-------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+https://www.techotopia.com/index.php/An_Android_Studio_Custom_Document_Printing_Example
+-------------------------------------------------------------------------------------------------------------
+
+
+private void doPhotoPrint() {
+    PrintHelper photoPrinter = new PrintHelper(getActivity());
+    photoPrinter.setScaleMode(PrintHelper.SCALE_MODE_FIT);
+    Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.droids);
+    photoPrinter.printBitmap("droids.jpg - test print", bitmap);
+}
