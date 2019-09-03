@@ -1,0 +1,20 @@
+PackageManager packageManager = this.getPackageManager();
+            Intent i = new Intent(Intent.ACTION_VIEW);
+
+            try {
+                String url = "https://api.whatsapp.com/send?phone="+ "+91number" +"&text=" +
+                        URLEncoder.encode("text", "UTF-8");
+                i.setPackage("com.whatsapp");
+                i.setData(Uri.parse(url));
+                if (i.resolveActivity(packageManager) != null) {
+                    startActivity(i);
+                }
+            } catch (Exception ex){
+                ex.printStackTrace();
+            }
+------------------------------------------------------------------------------------------------------------------------            
+            Intent intentWhatsapp = new Intent(Intent.ACTION_VIEW);
+        String url = "https://chat.whatsapp.com/HHxtQ8h9gTzFAirYqzaVzo";
+        intentWhatsapp.setData(Uri.parse(url));
+        intentWhatsapp.setPackage("com.whatsapp");
+        startActivity(intentWhatsapp);
